@@ -21,7 +21,7 @@ Add "Open in Visual Studio Code" to the macOS context menu. Tested with macOS Ve
 
 ## Credits
 
-Nothing about this is original.
+Nothing about this is original. This is just meant to combine the best pieces of the existing methods that are floating around.
 
 * [Sankra/OpenFolderInVSCode](https://github.com/Sankra/OpenFolderInVSCode)
 * [idleberg's gist](https://gist.github.com/idleberg/bc65021a736e9139e3e31f7f2c761d5d)
