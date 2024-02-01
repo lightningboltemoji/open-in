@@ -1,21 +1,26 @@
-# open-in-vscode
+<div align="center">
+  <h1>open-in</h1>
+  <div>Add a macOS context menu shortcut for your favorite editor!</div>
+  <div><img width="260" height="364" src="https://user-images.githubusercontent.com/51724788/227115981-886d8f74-ac42-474c-8570-a82204ea45a4.gif"/></div>
+</div>
 
-Add "Open in Visual Studio Code" to the macOS context menu. Tested with macOS Ventura 13.2.1.
+<h1></h1>
 
-<img width="260" height="364" src="https://user-images.githubusercontent.com/51724788/227115981-886d8f74-ac42-474c-8570-a82204ea45a4.gif"/>
+Releases are published for **Visual Studio Code** and **Zed**, but following the steps below should work for most editors. Tested with **macOS Sonoma 14.3**.
 
 ### Option 1: Prebuilt
 
-1. Download the [latest release](https://github.com/lightningboltemoji/open-in-vscode/releases), extract, open to install
+1. Download the [latest release](https://github.com/lightningboltemoji/open-in/releases), extract, open to install
 
 ### Option 2: DIY (recommended)
 
 1. Open Automator
 2. File > New > Quick Action
-3. Drag "Open Finder Items" to the main area
-4. Open with -> Other... -> Visual Studio Code
+3. Search the actions sidebar for "Open Finder Items"
+3. Drag it to the main area that says "Drag actions ..."
+4. Open with -> Other... -> Visual Studio Code (or any editor)
 5. File -> Save
-6. Enter "Open in Visual Studio Code" (or anything you want the context action to say)
+6. Enter "Open in Visual Studio Code" (or what you want the context action to say)
 7. Open Terminal
 8. Execute `plutil -remove NSServices.0.NSIconName "$HOME/Library/Services/Open in Visual Studio Code.workflow/Contents/Info.plist"`
 
